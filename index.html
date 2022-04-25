@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="sidebar">
+            <div class="logo_wrapper">
+
+                <i class="fa-solid fa-shield-heart logo"></i>
+            </div>
+
+            <div class="sidebar_module">
+                <p>module 1</p>
+            </div>
+
+            <div class="sidebar_user">
+                <p class="sidebar_user__title">user</p>
+                <p class="sidebar_user__first">John</p>
+                <p class="sidebar_user__last">Banda</p>
+                <p class="sidebar_user__title">Department</p>
+                <p class="sidebar_user__dept">Operations</p>
+            </div>
+
+            <nav class="sidebar_nav">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-house"></i><span>home</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-right-from-bracket"></i><span>logout</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-book"></i><span>take test</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar_footer">
+                <p>Safety First</p>
+            </div>
+        </div>
+
+        <nav class="main_nav">
+            <h2 class="main_nav__brand">Safety first</h2>
+            <div class="menu" id="menuBar">
+                <div class="menu_bar m_top"></div>
+                <div class="menu_bar m_middle"></div>
+                <div class="menu_bar m_bottom"></div>
+            </div>
+            <ul class="main_nav__ul">
+                <hr>
+                <li><a href="#"><i class="fa-solid fa-house"></i>logout</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i>home</a></li>
+                <li><a href="#"><i class="fa-solid fa-book"></i>test</a></li>
+            </ul>
+        </nav>
+
+        <div class="main_content">
+            <h1 class="main_module">Module 1 : Introduction</h1>
+            <section>
+                <h2 class="main_subtitle"><i class="bi bi-check2"></i>title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere cupiditate omnis consectetur dolorem recusandae blanditiis fugiat, tenetur aperiam hic repudiandae voluptatem eligendi molestiae culpa deleniti sequi illo tempora libero odio, impedit illum delectus doloremque unde minima! Facere atque cupiditate ullam nulla omnis. Possimus aperiam exercitationem corporis voluptatum deleniti? Nemo nesciunt quo doloremque! Recusandae laborum qui voluptates aliquam officiis cupiditate iste sint minima perspiciatis corrupti! Nostrum itaque aperiam nam ab!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, harum?</p>
+            </section>
+            <section>
+                <h2 class="main_subtitle">Welcome</h2>
+                <img src="safety-1.jpg" 
+                alt="safety" class="image1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere cupiditate omnis consectetur dolorem recusandae blanditiis fugiat, tenetur aperiam hic repudiandae voluptatem eligendi molestiae culpa deleniti sequi illo tempora libero odio, impedit illum delectus doloremque unde minima! Facere atque cupiditate ullam nulla omnis. Possimus aperiam exercitationem corporis voluptatum deleniti? Nemo nesciunt quo doloremque! Recusandae laborum qui voluptates aliquam officiis cupiditate iste sint minima perspiciatis corrupti! Nostrum itaque aperiam nam ab!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nulla ullam distinctio consequuntur recusandae at?</p>
+            </section>
+            <section>
+                <h2 class="main_subtitle">title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere cupiditate omnis consectetur dolorem recusandae blanditiis fugiat, tenetur aperiam hic repudiandae voluptatem eligendi molestiae culpa deleniti sequi illo tempora libero odio, impedit illum delectus doloremque unde minima! Facere atque cupiditate ullam nulla omnis. Possimus aperiam exercitationem corporis voluptatum deleniti? Nemo nesciunt quo doloremque! Recusandae laborum qui voluptates aliquam officiis cupiditate iste sint minima perspiciatis corrupti! Nostrum itaque aperiam nam ab!</p>
+            </section>
+            
+        </div>
+    </div>
+
+
+    <script>
+        window.addEventListener("load", () => {
+            console.log("test")
+            const menu = document.getElementById('menuBar');
+            const menu_list = document.querySelector('.main_nav__ul');
+
+            const mtop = document.querySelector('.m_top');
+            const mmiddle = document.querySelector('.m_middle');
+            const mbottom = document.querySelector('.m_bottom');
+
+            menu.addEventListener("click", () => {
+                menu_list.classList.toggle('display');
+                
+                // if (menu_list.classList.contains('display')) {
+                //     mmiddle.style.display = 'none';
+                // } else {
+                //     mmiddle.style.display = 'block';
+                    
+                // }
+
+                // if (menu_list.classList.contains('display')) {
+                //     mtop.style.transform = 'rotate(45deg)';
+                //     mtop.stop.style = 'top: 0';
+                // } else {
+                //     mtop.style.transform = 'rotate(0)';
+                //     mmiddle.style.opacity = 1;
+                    
+                // }
+
+
+                console.log("clcked")
+            })
+
+            menu_list.addEventListener("blur", () => {
+                menu_list.style.display = "none";
+            })
+        } );
+    </script>
+</body>
+</html>
